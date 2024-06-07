@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -99,9 +101,9 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-
+      <img src="firefox_logo-only_RGB.png" alt="firefox"
+      
+        
     </header>
 
     <main>
@@ -118,7 +120,12 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img>
+          <img
+          srcset="firefoxlogo400-min.png 400w, firefoxlogo120-min.png 120w"
+            sizes="(max-width: 500px) 120px"
+            src="/firefoxlogo400-min.png"
+            alt="Firefox logo"
+            />
         </a>
         <a href="https://www.mozilla.org/">
           <img>
