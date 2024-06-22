@@ -8,8 +8,11 @@
 }
 
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: 'newyorkregular';
+  src: url('../fonts/newyork_personal_use-webfont.woff2') format('woff2'),
+  url('../fonts/newyork_personal_use-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 * {
   box-sizing: border-box;
