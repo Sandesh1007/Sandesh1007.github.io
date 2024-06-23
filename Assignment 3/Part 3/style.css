@@ -120,3 +120,38 @@ a:active{
   outline: initial;
 }
 
+a[href*="http"] {
+  background-image: url("external-link-52.png");
+  background-position: right;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  padding-right: 15px;
+}
+
+li {
+  list-style: square;
+}
+
+nav {
+  background-color: rgb(218, 187, 187);
+  height: 100%;
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  padding: 0;
+}
+nav ul{
+  text-align: center;
+  padding: 0;
+}
+nav ul li{
+  list-style: none;
+  text-transform: uppercase;
+  
+}
+
+nav ul a {
+  text-decoration: none;
+  display: block;
+  padding: 35px;
+  font-size: 2.4rem;
+}
