@@ -23,22 +23,21 @@ body {
   min-width: 1000px;
   max-width: 1400px;
 }
-
+div {
+  display: flex;
+}
 /* Layout */
 
 section {
-  float: left;
-  width: 50%;
+flex: 5;
 }
 
 aside {
-  float: left;
-  width: 30%;
+  flex: 3;
 }
 
 nav {
-  float: left;
-  width: 20%;
+  flex: 6;
 }
 
 footer {
@@ -57,3 +56,9 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: 'EB Garamond', serif;
+  font-family: 'hind madurai', sans-serif;
+  font-family: 'PT serif' serif;
+  src: url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind+Madurai:wght@300&family=PT+Serif&display=swap');
+}
