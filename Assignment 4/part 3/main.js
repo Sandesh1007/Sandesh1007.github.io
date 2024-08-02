@@ -70,3 +70,4 @@ class Ball {
   }
 }
 
+const balls = [];
