@@ -226,6 +226,7 @@ function loop() {
 
   requestAnimationFrame(loop);
 }
+loop();
 // function to generate random RGB color value
 
 function randomRGB() {
