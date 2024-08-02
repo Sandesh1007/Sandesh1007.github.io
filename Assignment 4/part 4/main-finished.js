@@ -15,6 +15,14 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function Shape(x, y, velX, velY, exist) {
+  this.x = x;
+  this.y = y;
+  this.velX = velX;
+  this.velY = velY;
+  this.exist = exist;
+}
+
 // function to generate random RGB color value
 
 function randomRGB() {
