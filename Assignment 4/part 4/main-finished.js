@@ -183,6 +183,11 @@ Redhole.prototype.control = function () {
   };
 };
 
+let count1 = 0;
+let count2 = 0;
+let hole = new Blackhole(random(0, width), random(0, height), true);
+let hole2 = new Redhole(random(0, width), random(0, height), true);
+
 
 // function to generate random RGB color value
 
