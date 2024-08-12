@@ -79,4 +79,30 @@ stopBtn.addEventListener("click", function () {
   audioPlayer.currentTime = 0;
   playPauseBtn.textContent = "Play";
 });
+audioPlayer.addEventListener("timeupdate", function () {
+  let minutes = Math.floor(audioPlayer.currentTime / 60);
+  let seconds = Math.floor(audioPlayer.currentTime - minutes * 60);
+  let minuteValue;
+  let secondValue;
+  let mediaTime;
 
+  if (minutes < 10) {
+    minuteValue = "0" + minutes;
+  } else {
+    minuteValue = minutes;
+  }
+
+  if (seconds < 10) {
+    secondValue = "0" + seconds;
+  } else {
+    secondValue = seconds;
+  }
+
+  mediaTime = minuteValue + ":" + secondValue;
+  timeLabel.textContent = mediaTime;
+});
+
+audioPlayer.addEventListener("ended", function() {
+  audioPlayer.currentTime = 0;
+  playPauseBtn.textContent = "Play";
+});

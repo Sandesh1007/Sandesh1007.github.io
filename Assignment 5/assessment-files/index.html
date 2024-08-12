@@ -14,11 +14,10 @@
   </head>
 
   <body>
-    <div class="header">
+   <header role="banner">
       <h1>Welcome to our wildlife website</h1>
-    </div>
 
-    <nav class="nav">
+    <nav role="navigation" aria-label="Main">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
@@ -26,13 +25,12 @@
         <li><a href="#">Blog</a></li>
       </ul>
 
-      <form class="search">
-        <label for="search-input" class="'hidden"> Search query</label>
-        <input id="Search-input" type="search" name="q" placeholder="Search query"
-        />
-        <input type="submit" value="Go!"/>
+      <form role="search" class="search">
+        <input type="search" name="search" aria-label="Search our website" role="search">
+        <button type="submit">Search</button>
       </form>
-    </nav>
+     </nav>
+    </header>
 
     <main>
       <article>
@@ -135,7 +133,8 @@
         <h3>About the author</h3>
 
         <p>
-        Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.
+        Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. 
+        He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.
         </p>
         <p>
         He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.
