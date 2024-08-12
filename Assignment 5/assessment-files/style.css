@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 
 nav, article, footer, .secondary {
-  background-color: green;
+  background-color: white;
 }
 
 article, footer, .secondary {
@@ -272,4 +272,21 @@ audio {
   line-height: 100%;
   flex: 1;
   text-align: center;
+}
+.controls button {
+  border-radius: 10px;
+  cursor: pointer;
+}
+.transcript-active {
+  display: block;
+  font-family: inherit;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
+  font-size: 1.6rem;
+  border: #2a2a2a solid 1px;
+  padding: .5rem;
+}
+
+.transcript-hidden {
+  display: none;
 }
